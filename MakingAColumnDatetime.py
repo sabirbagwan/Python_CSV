@@ -1,7 +1,7 @@
 import pandas as pd
 import glob
 
-file = r"E:\BN&NOptionClean\ALL\BankNifty FinalClean - Copy\New folder\Expiry.csv"
+file = r"E:\Expiry.csv"
 
 # for file in glob.glob(filepath + "\*"):
 
