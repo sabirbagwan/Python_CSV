@@ -1,0 +1,10 @@
+import shutil, os
+AllDir = r'address of Folder containing all'
+DestFolder = r'address of destination folder'
+for root, dirs, files in os.walk((os.path.normpath(AllDir)), topdown=False):
+        for name in files:
+            # if name.endswith('.csv'):
+            if name.endswith('.*'):
+                print("Found")
+                SourceFolder = os.path.join(root,name)
+                shutil.copy2(SourceFolder, DestFolder) 
