@@ -1,0 +1,8 @@
+import pandas as pd
+
+df = pd.read_csv("old.csv")
+
+df['DataTime'] = pd.to_datetime(df['Date'] + df['Time'], format='%Y-%m-%d%H:%M:%S')
+
+df.to_csv("new.csv",index=False)
+
